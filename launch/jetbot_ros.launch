@@ -1,0 +1,9 @@
+<launch>
+    <group>
+        <env name="ROS_MASTER_URI" value="http://192.168.0.17:11311" />
+        <env name="ROS_IP" value="192.168.0.17" />
+        <node name="jetbot_motors" pkg="jetbot_ros" type="jetbot_motors.py"/>
+        <node name="jetbot_oled" pkg="jetbot_ros" type="jetbot_oled.py"/>
+        <node name="jetbot_camera" pkg="jetbot_ros" type="jetbot_camera"/>
+    </group>
+</launch>
